@@ -1,26 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>responsive-navbar</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-     <nav>
-        <input type="checkbox" class="myCheckbox" id="myCheck">
-        <label for="myCheck" class="checkButton">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">MA'<span>yoro</span></label>
-        <ul>
-            <li><a href="" class="activ"><i class="fa fa-house"></i> home</a></li>
-            <li><a href="#carriere"><i class="fa-solid fa-landmark"></i> Carriere</a></li>
-            <li><a href="#skills">#Skills</a></li>
-            <li><a href="#contact"><i class="fa-solid fa-address-book"></i> Contactez-moi!</a></li>
-            <li><a href="blog.html" class="blog"><i class="fa-brands fa-blogger-b"></i> Blog</a></li>
-        </ul>
-     </nav>
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- monnavbar -->
+
+    <nav>
+      <input type="checkbox" class="myCheckbox" id="myCheck" />
+      <label for="myCheck" class="checkButton">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MA'<span>yoro</span></label>
+      <ul>
+        <li>
+          <a href="" class="activ"><i class="fa fa-house"></i> home</a>
+        </li>
+        <li>
+          <a href="#carriere"><i class="fa-solid fa-landmark"></i> Carriere</a>
+        </li>
+        <li><a href="#skills">#Skills</a></li>
+        <li><a href="#projets"><i class="fa-solid fa-diagram-project"></i>  Projets</a></li>
+        <li>
+          <a href="#contact"
+            ><i class="fa-solid fa-address-book"></i> Contactez-moi!</a
+          >
+        </li>
+        <li>
+          <a href="blog.html" class="blog"
+            ><i class="fa-brands fa-blogger-b"></i> Blog</a
+          >
+        </li>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+          rel="stylesheet"
+        />
+      </ul>
+    </nav>
+
+    <!-- section 1 -->
+
+    <div class="section1">
+      <div class="bio">
+        <p id="nom">PAPA MAYORO FALL</p>
+        <p class="desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Voluptatibus, consequatur quasi quidem vero aliquam ipsum cum
+          accusantium ipsam laboriosam porro.
+        </p>
+        <p class="cv"> <a href="document/cv.pdf" download="MAYORO CV">telecharger le CV</a></p>
+        <!-- <div class="mode">
+                Change mode:
+                <span class="change"> sombre</span>
+            </div> -->
+      </div>
+      <div class="img">
+        <img src="image/Programmer-pana.svg" alt="image developper" />
+      </div>
+    </div>
+
+    <!-- section 2 carroiere -->
+    <div class="section2" id="carriere" >
+        <h1> CARRIERE<span>__</span></h1>
+        <fieldset>
+          <legend class="legend">Formation Xarala</legend>
+          <img src="image/logo.png" alt="logo Xarala">
+          <ul>
+            <li>Developpeur FullStack JavaScript</li>
+            <li>Jang Liggeey - Developpement Full Stack </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="legend">Université Aliooune Diop (BAMBEY)</legend>
+          <img src="image/uadb.png" alt="logo uadb">
+          <ul>
+            <li>Master 2 Systeme d'information <span>en cours</span></li>
+            <li>Master 1 Système d'information <span>2021/2022</span></li>
+            <li>Licence en Developpement et Administration d'Apllictions <span>2020/2021</span></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="legend">Lycee EL-HHadji Ibrahima Diop (Yeumbeul)</legend> 
+          <img src="image/leid.png" alt="logo leid">
+          <ul>
+            <li>Baccalauréat Scientifique serie S2 <span>2017/2018</span></li>
+          </ul>
+        </fieldset>
+    </div>
+    <!-- section 3 Skills -->
+    <div class="section3" id="skills">
+        <h1> SKILLS<span>__</span></h1>
+        <div class="image-skils">
+          <img src="image/" alt="logo html">
+          <img src="image/" alt="logo css">
+          <img src="image/" alt="logo js">
+          <img src="image/" alt="logo php">
+          <img src="image/laravel.svg" alt="logo laravel">
+          <img src="image/angular-icon.svg" alt="logo angular">
+          <img src="image/react-1-logo-png-transparent-removebg-preview.png" alt="logo react">
+          <img src="image/mysql.svg" alt="logo mysql">
+          <img src="image/oracle.jpg" alt="logo oracle">
+          <img src="image/nodejs.png" alt="logo node js">
+          <img src="image/postgres.svg" alt="logo postgres">
+          <img src="image/illustrator" alt="logo illustrator">
+          <img src="image/Canva_icon_2021.svg.png" alt="logo canva">
+          <img src="image/phython-icon.svg" alt="logo python">
+          <img src="image/anaconda.png" alt="logo anaconda">
+      </div>
+    </div>
+
+    <!-- section 4 mes Projets -->
+    <div class="section4">
+      <h1> PROJETS<span>__</span></h1>
+    </div>
+
+    <!-- section 4 Contactez-moi -->
+    <div class="section4" id="contact">
+        <h1> CONTACTEZ-MOI!<span>__</span></h1>
+        
+    </div>
+  </body>
 </html>
