@@ -31,8 +31,8 @@ nav ul li a{
 }
 
 label.logo{
-     font-size: 23px ;
-     line-height: 70px;
+    font-size: 23px ;
+    line-height: 70px;
     color: white;
     font-weight: bold;
     margin-left: 50px;
@@ -112,6 +112,9 @@ nav ul li a.blog{
     color: black;
     padding: 5px;
 }
+.bio p.donnee a#tel{
+    color: green;
+}
 .bio p.donnee a#tel:hover{
     background: green;
     border-radius: 50%;
@@ -119,17 +122,26 @@ nav ul li a.blog{
     padding: 8px;
     /* font-size: 15px; */
 }
+.bio p.donnee a#mail{
+    color:#ff0000 ;
+}
 .bio p.donnee a#mail:hover{
     background: #ff0000;
     border-radius: 50%;
     color: #fff;
     padding: 8px;
 }
+.bio p.donnee a#whatshap{
+    color:#075E54 ;
+}
 .bio p.donnee a#whatshap:hover{
     background: #075E54 ;
     border-radius: 50%;
     color: #fff;
     padding: 8px;
+}
+.bio p.donnee a#linkedin{
+    color:#0e76a8 ;
 }
 .bio p.donnee a#linkedin:hover{
     background: #0e76a8;
@@ -198,27 +210,24 @@ legend{
     border-bottom:2px solid  #ff0000;
     border-left:5px solid  #ff0000;
     border-right:5px solid  #ff0000;
-    /* background: black;
-    color: white; */
     border-radius: 25px 0px;
-     /* color: #fff; */
      padding: 5px;
 }
 span{
     color: #ff0000;
 }
-fieldset{
+ fieldset{
     margin-top: 20px;
     /* border: none ; */
     max-width: 600px;
     padding: 20px;
     margin: 10px;
-    height: 100px;
+    /* height: 100px; */
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
     /* box-shadow:3px 5px #0302028b; */
 }
-fieldset ul li{
+ ul li{
     list-style: none;
 }
 
@@ -232,8 +241,8 @@ fieldset ul li{
 }
 button{
     border:#666 1px solid;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     font-weight: bold;
     margin:2px;
     font-size:35px;
@@ -251,6 +260,49 @@ button:hover{
 
 /* section 4 */
 .section4{
+    display :flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* text-align: center; */
+    padding: 20px;
+    /* width: 100%; */
+}
+.app{
+    display: flex;
+    width: 50%;
+    /* height: 150px; */
+    margin-top: 15px;
+
+}
+.image-app{
+    margin-top: 10px;
+}
+.image-app img{
+    border-radius: 15px;
+}
+.desc-app p.nom{
+    /* margin-top: 10px; */
+    font-weight: bold;
+    border-radius: 25px 0px;
+    padding: 5px;
+}
+.desc-app p{
+    margin: 8px;
+}
+.desc-app p a{
+    color: white;
+    background: black;
+    padding: 5px;
+    border-radius: 50%;
+}
+.desc-app p a:hover{
+    color: white;
+    background: #ff0000;
+    padding: 8px;
+    border-radius: 50%;
+}
+/* section 5 */
+.section5{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -261,7 +313,15 @@ button:hover{
 .localisation{
     width: 100%;
 }
-
+footer{
+    width: 100%;
+    height: 200px;
+    background: rgb(16, 15, 15);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+}
 
 
 @media screen and (max-width:1010px) {
@@ -290,7 +350,8 @@ button:hover{
  
  @media screen and (max-width:909px) {
     nav{
-        position:static;
+        position:sticky;
+        top: 0;
     }
      .checkButton {
           display: block;
@@ -324,6 +385,9 @@ button:hover{
          border-radius: 15px 0px;
          padding: 8px;
      }
+     label.logo{
+        margin-left: 10px;
+     }
      .myCheckbox:checked ~ ul {
          left: 0%;
      }
@@ -331,6 +395,7 @@ button:hover{
      .section1 {
         /* position: absolute;
         top: 0; */
+        /* margin-top: 100px; */
         display: block;
         text-align: center;
         align-items: center;
@@ -354,5 +419,16 @@ button:hover{
         /* left: 0; */
     
     }
-     
+    .section4{
+        /* height: 400px; */
+        text-align: center;
+    }
+    .app{
+        display: block;
+        width: 100%;
+        font-size: 16px;
+    }
+    .desc-app p#desc-app{
+        font-size: 14px;
+    }
  }
